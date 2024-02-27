@@ -20,6 +20,8 @@
   <li>MX Linux</li>
 </ol>
 
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
 <h1>What is Operating System? </h1>
 
 - Operating System is an interface between user and computer hardware. Computer hardware cannot understand human language and human cannot understand computers binary language. Binary language is nothing but 0’s and 1’s. 
@@ -31,7 +33,7 @@
   <li>Linux OS</li> 
   <li>Unix OS</li> 
 </ol>
- 
+ <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
 <h1>Architecture of Linux: </h1>
 <img src="assets/architecture-of-linux.png">
@@ -53,12 +55,12 @@
 
 - Applications are nothing but utilities. 
 
- 
+ <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
 <h1>File System in Linux Operating System</h1> 
 <img src="assets/Linux-filesystem-hierarchy.jpg">
  
-
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 <h1>File Permissions </h1>
 
 <ol>
@@ -134,7 +136,7 @@ The results produce the three-digit value 744.
 <h5>Chmod command is used to change the permission of the file/folder.</h5> 
 <h5>By default, execution is not available. Using chmod we can change the permissions. </h5>
 
- 
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" />  
 
 <h1>Package Manager</h1> 
 
