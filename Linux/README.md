@@ -7,7 +7,7 @@
 
 - Linux Distributions:
 
-<ol style="list-style-type: square; ">
+<ol>
   <li>Deepin</li>
   <li>OpenSUSE</li> 
   <li>Fedora</li>
@@ -34,7 +34,7 @@
  
 
 <h1>Architecture of Linux: </h1>
-
+<img src="./architecture-of-linux">
                                                   
 
  
