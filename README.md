@@ -31,8 +31,13 @@
    <img src="Assets/DevOps-Lifecycle.png" height="350px" width="450px">
    </div>
    
-### plan:
+### Plan:
 - In this initial stage, the development team collaborates with stakeholders to define project goals, requirements, and plan the development process. This includes creating a roadmap, prioritizing features, estimating resources, and setting project timelines.
+### Defining: 
+- Clearly define the requirements in document. After researching in the planning stage, the collective information is documented. 
+### Designing: 
+- High Level Design / Low Level Design 
+- Architect / senior development team design the code procedure.
 ### Develop:
 - During this stage, developers write code based on the requirements and design specifications. DevOps teams emphasize the use of version control systems to manage code changes and ensure collaboration among developers. They also follow coding best practices and conduct code reviews to maintain code quality.
 ### Build:
