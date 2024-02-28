@@ -22,4 +22,11 @@
     - System Administrator
     - Build and release engineer
     - Server Administrator
- 
+
+ # SDLC - Software Development Life Cycle:-
+ - It is the standard procedure followed in an organization. Below are the main phases used in organization.
+ - End goal is to deliver the high-quality application /product and meet the expectations of customer.
+     - Design
+     - Develop
+     - Test
+   <img src="Assets/DevOps-Lifecycle.png">
