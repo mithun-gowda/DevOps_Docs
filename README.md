@@ -1,15 +1,16 @@
-# DevOps
-- Devops is basically practice/culture that we follow in organization which will increase organization's ability to deliver the application. Which is the end goal of devops.
-- Delivery the new version (V1 -> V2) of software after the issue fixes is the devops.
-- End goal of Devops is improving efficiency.
-- Devops is improving the delivery software by automation
-- Monitoring the delivery of application
-    - when there is issue in quality/automation someone needs to report back to you that is monitoring
-- Testing the product to deliver
-- DevOps is the process of improving the delivery (Application/Script), making the delivery quicker by ensuring there is proper automation in the process and ensuring there is proper quailty and ensuring that you have set up proper continous monitoring and having continuous testing.
-- To automate the manual effort for deploy the application to production server. DevOps is introduced.
+<h1 align="center">DevOps</h1>
+<li>Devops is basically practice/culture that we follow in organization which will increase organization's ability to deliver the application. Which is the end goal of devops.</li>
+<li>Delivery the new version (V1 -> V2) of software after the issue fixes is the devops.</li>
+<li>End goal of Devops is improving efficiency.</li>
+<li>Devops is improving the delivery software by automation</li>
+<li>Monitoring the delivery of application.  when there is issue in quality/automation someone needs to report back to you that is monitoring</li>
+<li>Testing the product to deliver</li>
+<li>DevOps is the process of improving the delivery (Application/Script), making the delivery quicker by ensuring there is proper automation in the process and ensuring there is proper quailty and ensuring that you have set up proper continous monitoring and having continuous testing.</li>
+<li>To automate the manual effort for deploy the application to production server. DevOps is introduced.</li>
 
-  ### Manual Procedure of deploying the Application:
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
+### Manual Procedure of deploying the Application:
   - Developer/Developers build the application and put that in a central location from the central location system administrator / build and release engineer creates a server and deploy the application in server. Tester will test the application. After the testing the application Build and Release engineer will promote the Application to next level. either production server/pre-production server.
   - Centralised Code Repository:
       - CVS and SVN:-
@@ -22,6 +23,8 @@
     - System Administrator
     - Build and release engineer
     - Server Administrator
+
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
  # SDLC - Software Development Life Cycle:-
  - It is the standard procedure followed in an organization. Below are the main phases used in organization.
