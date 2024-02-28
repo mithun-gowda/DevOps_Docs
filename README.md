@@ -37,7 +37,7 @@
 ### Plan:
 - In this initial stage, the development team collaborates with stakeholders to define project goals, requirements, and plan the development process. This includes creating a roadmap, prioritizing features, estimating resources, and setting project timelines.
 ### Defining: 
-- Clearly define the requirements in document. After researching in the planning stage, the collective information is documented. 
+- Clearly define the requirements in document. After researching in the planning stage, the collective information is documented as <b><i>Software Requirement Specification Document</i></b>. 
 ### Designing: 
 - High Level Design / Low Level Design 
 - Architect / senior development team design the code procedure.
@@ -55,3 +55,48 @@
 - Continuous monitoring is crucial in a DevOps SDLC. Monitoring tools capture metrics, logs, and other relevant data to provide insights into the application's performance, usage, and user experience. Monitoring enables teams to detect anomalies, identify bottlenecks, and make data-driven decisions to improve the software.
 ### Iterate:
 - DevOps promotes an iterative and incremental approach to software development. Based on feedback from users and stakeholders, the development team continuously improves the software by addressing bugs, adding new features, and optimizing performance. This feedback loop is crucial for delivering value and meeting customer expectations.
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" />
+<h1 align="center">VM - Virtual Machine</h1>
+
+<h3>What is Server?</h3>
+   <li>Server is nothing but space where we deploy the application</li>
+   <li>Developers create applications on a development server and then deploy them to a production server.</li>
+<li>2024 cloud service providers are: </li>
+
+  - Amazon Web Services (AWS)
+  - Microsoft Azure
+  - Google Cloud Platform (GCP)
+  - IBM Cloud
+  - Oracle Cloud
+  - Alibaba Cloud
+  - VMware Cloud
+  - DigitalOcean
+  - Rackspace
+  - Tencent Cloud
+<li><b>Example:</b> Companies like HP, IBM, and Microsoft sell physical servers with specifications such as 100GB RAM and 100 cores per processor.
+However, purchasing a server with such high specifications when only a fraction of those resources are utilized, like using only 10GB RAM and 10 cores, leads to inefficiency.
+This inefficiency is addressed by virtual machines.</li>
+
+<h3>Virtual Machine</h3>
+<li>Virtual machine is a virtualized computer that can perform most of the same functions as a computer</li>
+<li>Physical server are bought from companies like: HP/IBM/Microsoft/Amazon</li>
+<li>In physical server we install the hypervisor</li>
+<li>Hypervisor is a software that can install virtual machine in physical server</li>
+<li>Install virtual machine in physical server</li>
+<li>We can do logical partition of 1 physical server into based on requirment</li>
+<li>It is know as Logical Isolation</li>
+<li>The partition done server are logical isolation which is VM's. example: [v1,v2,......vn] In one physical server</li>
+<li>In this case added efficiency using DevOps. By adding automated process by hypervisor</li>
+<li>Popular Hypervisors are:</li>
+
+  - VMware
+  - Xen
+    
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
+## On-Premises:
+- On-premises refers to IT infrastructure hardware and software applications that are hosted on-site, rather than in a public cloud platform or remote data center.
+- On-premises software is installed and runs on computers on the premises of the person or organization using the software, rather than at a remote facility such as a server farm or cloud.
+- On-premises software is sometimes referred to as "shrinkwrap" software, and off-premises software is commonly called "software as a service" ("SaaS") or "cloud computing." On-premises IT or data environment means that an enterprise must manage all resources on an ongoing basis, and there’s a periodic need to refresh, upgrade, and patch hardware and software systems.
+- On-premises setups let companies handle their data and security steps directly.
+- On-premises software is installed and runs on a company's own hardware infrastructure, and is hosted locally, whereas cloud software is stored and managed on the provider's servers, and accessed through a web browser or other interface.
