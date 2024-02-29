@@ -81,17 +81,25 @@ This inefficiency is addressed by virtual machines.</li>
 <li>Virtual machine is a virtualized computer that can perform most of the same functions as a computer</li>
 <li>Physical server are bought from companies like: HP/IBM/Microsoft/Amazon</li>
 <li>In physical server we install the hypervisor</li>
-<li>Hypervisor is a software that can install virtual machine in physical server</li>
-<li>Install virtual machine in physical server</li>
+<li>A hypervisor is software that enables multiple instances of operating systems to run on the same physical computing resources.</li>
 <li>We can do logical partition of 1 physical server into based on requirment</li>
 <li>It is know as Logical Isolation</li>
 <li>The partition done server are logical isolation which is VM's. example: [v1,v2,......vn] In one physical server</li>
-<li>In this case added efficiency using DevOps. By adding automated process by hypervisor</li>
+<li>In this added efficiency using DevOps. By adding automated process by hypervisor</li>
 <li>Popular Hypervisors are:</li>
-
+  - Hyper-V
   - VMware
   - Xen
-    
+
+<h3>Here are some differences between physical and virtual machines:</h3>
+<li><b>Performance:</b> Physical servers offer higher performance and computing power.</li>
+<li><b>Scalability:</b> Virtual servers can be scaled up or down without purchasing additional hardware.</li>
+<li><b>Cost:</b> Virtual servers can cost less to deploy than physical servers.</li>
+<li><b>Space:</b> Virtual machines can run multiple operating system environments on a single physical computer, saving physical space.</li>
+<li><b>Overhead: </b>Multiple systems can operate from the same console at the same time.</li>
+<li><b>Safety net for data: </b>Virtual machines can be used for rapid disaster recovery and automatic backups.</li>
+<li><b>Infrastructure costs:</b> Virtual machines can significantly reduce your financial outlay for hardware.</li>
+
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
 ## On-Premises:
