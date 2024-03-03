@@ -161,3 +161,81 @@ resource "aws_instance" "example_server" {
 
 **Note**: Ensure to replace `"path_of_.pem_file"` and `<public_ipv4_address>` with actual values.
 
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
+## AWS CLI Installation and Configuration
+
+1. **Download AWS CLI binary** from the official AWS website.
+
+2. **Configure the downloaded MSI**:
+   - Open the downloaded MSI file and follow the installation prompts.
+
+3. **Check AWS installation**:
+   - Open Command Prompt (CMD).
+   - Type `aws version` and press Enter.
+   - Verify the installation path.
+
+4. **Configure AWS CLI**:
+   - Open CMD.
+   - Type `aws configure` and press Enter.
+   - Enter Access Key ID.
+   - Enter Secret Access Key.
+   - Enter Default Region (e.g., `us-east-1`).
+   - Enter Output Format (e.g., `json`).
+
+5. **AWS Management Console**:
+   - Open AWS Management Console.
+   - Click on "Security Credentials".
+   - Create Access Key.
+
+### Working with S3
+
+- **List S3 buckets**:
+  ```bash
+  aws s3 ls
+  ```
+- **Create S3 Bucket**
+  ```bash
+    aws s3 mb s3://mithuns3bucket --region sydney
+  ```
+- **Create S3 Bucket Folder**
+  ```bash
+    aws s3api put-object --bucket testawss3bucket111 --key myfolder1/ --content-length 0
+  ```
+- **List folders inside S3 bucket**
+  ```bash
+  aws s3 ls s3://testawss3bucket111/
+  ```
+- **Add file inside S3 bucket folder**
+  ```bash
+    aws s3 cp "D:\desktop\python\notes\product_table.txt" s3://mithuns3bucket/myfolder1/
+  ```
+
+### Working with EC2
+
+- **Create EC2 instance**
+  ```bash
+    aws ec2 run-instances --image-id ami-04f5097681773b989 --instance-type t2.micro --key-name test_aws --security-group-ids sg-061f25b84f37db751 --subnet-id subnet-0609e8e25fef5ebd7
+  ```
+- **Restart instance**
+  ```bash
+    aws ec2 start-instances --instance-ids i-0387b36ee7befc749 --region ap-southeast-2
+  ```
+- **Stop instance**
+  ```bash
+  aws ec2 stop-instances --instance-ids i-0387b36ee7befc749 --region ap-southeast-2
+  ```
+- **List all EC2 instances**
+  ```bash
+      aws ec2 describe-instances
+  ```
+- **erminate instance**
+  ```bash
+    aws ec2 terminate-instances –instance-ids <instance id>
+  ```
+
+  # Note:
+  - Before performing EC2 operations, ensure proper IAM setup:
+    - Navigate to IAM in the AWS Management Console.
+    - Click on "Users".
+    - Create a new user and assign necessary permissions (e.g., AmazonEC2FullAccess).
