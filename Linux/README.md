@@ -264,7 +264,8 @@ The results produce the three-digit value 744.
 | tree /home/    |              | - Used to display the output in a tree format. Displays the folder structure in a tree format      |
 |                |              | - Install `tree` command to execute: `sudo apt install tree`                                       |
 | route          |              | To display the route table and to set up default gateway in the Linux server                       |
-| alias d="du -sh" |            | It is used to make the command-line interface more user-friendly. It
+| alias d="du -sh" |            | It is used to make the command-line interface more user-friendly.|
+| History | | Gives all commands execute before |
 
 <a href="https://1drv.ms/x/c/54c857a30a5fec46/EVFL9kyTU5dJrOBa6blYlT8BCceWgG3ynTlj4cy8w9J4Zw?e=zPowmo">Commands</a>
  
