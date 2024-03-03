@@ -125,7 +125,7 @@ resource "aws_instance" "example_server" {
 }
 ```
 
-# Open Instance from Terminal (Mobaxterm)
+### Open Instance from Terminal (Mobaxterm)
 
 ## Initial Setup
 1. Open your terminal (Mobaxterm).
