@@ -102,7 +102,9 @@ fi
 ## Other Useful Commands
 
 - Process Management: ps, htop
-- calender: cal
+- Calender: cal
+- Executed output in better readable view: ./file1.sh | more 
+- Kill the process: Kill –9 java / kill –9 11111 
 - File Comparison: cmp, diff
 - Find Command: sudo find / -name "filename"
 - File Permissions: chmod
@@ -111,10 +113,23 @@ fi
 - Word Count: x="mississippi" grep –o "s" <<<"$x" | wc –l or cat file.txt | wc –l (it wil display lines)
 - Crontab: Schedule tasks using crontab -e
 - Network Troubleshooting: Use traceroute or tracepath  (to check why my network is slow)
-Log Management: Use logrotate
+- Log Management (To manage logs of a system that generates huge log files everyday): Use logrotate 
 Iterations: Use for loops
+Example:
+```
+for((i=1; i<=100; i++); do
+echo $i;
+done 
+```
 Signal Trapping: Use trap command
-AWS Commands
-Describe Instances: aws ec2 describe-instances
-Filter Output with JQ: jq '.reservations[].instances[].instanceId'
+
+## AWS Commands
+
+- Describe Instances: aws ec2 describe-instances
+- Filter Output with JQ: jq '.reservations[].instances[].instanceId'   (will provide only intance id. Jq is for json file and yq for yaml file.)
+
+## Interview question:
+`Date | echo “this is system default command”`
+
+  - Here date is the system default command, it sends output to stdin, (stdout, stderr) then pipe (|) will not be able to receive the output from the stdin.  pipe will able to receive the output if the left side expression is not sending output to stdin. 
 
