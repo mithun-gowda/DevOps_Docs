@@ -124,3 +124,40 @@ resource "aws_instance" "example_server" {
   }
 }
 ```
+
+# Open Instance from Terminal (Mobaxterm)
+
+## Initial Setup
+1. Open your terminal (Mobaxterm).
+
+## Accessing AWS Instance
+2. Run the following command:
+    ```bash
+    ssh -i "path_of_.pem_file" ubuntu@<public_ipv4_address>
+    ```
+    - You'll be prompted to verify the fingerprint. Type 'yes'.
+    - If you encounter a permission denied error, proceed with the next step.
+
+3. Ensure the permissions of the `.pem` file are restricted:
+    ```bash
+    chmod 600 "path_of_.pem_file"
+    ```
+
+4. Try logging in again:
+    ```bash
+    ssh -i "path_of_.pem_file" ubuntu@<public_ipv4_address>
+    ```
+
+## Checking Status and Managing Instance
+5. Use `htop` command to check the system status.
+
+6. Use `ec2metadata` to retrieve detailed information about the instance.
+
+7. To stop the instance, use:
+    ```bash
+    sudo shutdown -h now
+    ```
+
+**Note**: Ensure to replace `"path_of_.pem_file"` and `<public_ipv4_address>` with actual values.
+
+
