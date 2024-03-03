@@ -57,6 +57,7 @@ Version: v1
 - **Change ownership of dir/file:** `chown username filename`
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
 ## User Management
 
 - **SUDO**: Substitute User Do
@@ -70,6 +71,7 @@ Version: v1
 - **Back to last user:** `exit`
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" />   
+
 ## Network Operations
 
 - **Check IP Address:** `ifconfig` or `ip address`
@@ -86,6 +88,7 @@ Version: v1
 - **Enables you from the inactive:** `sudo ufw enable`
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
 ## Service Management
 
 - **bc gives the output:** `ech0 “4+5+6+7” | bc` 
@@ -93,11 +96,13 @@ Version: v1
 - **Enable/Disable Service:** `sudo systemctl enable/disable service_name`
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
 ## System Management
 **Reboot:** `sudo reboot`
 **Shutdown:** `sudo shutdown –h now`
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
 ## Conditional Statements
 ```bash
 if [expression]; then
@@ -108,6 +113,7 @@ fi
 ```
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
 ## Other Useful Commands
 
 - **Process Management:** `ps`, `htop`
@@ -133,12 +139,14 @@ done
 - **Signal Trapping:** Use `trap` command
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
 ## AWS Commands
 
 - **Describe Instances:** `aws ec2 describe-instances`
 - **Filter Output with JQ:** `jq '.reservations[].instances[].instanceId'`   (will provide only intance id. Jq is for json file and yq for yaml file.)
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
 ## Interview question:
 `Date | echo “this is system default command”`
 
