@@ -274,5 +274,4 @@ The results produce the three-digit value 744.
 | sudo shutdown -h now | | will shutdown now |
 | sudo shutdown | | It will take time to shutdown |
 
-<a href="https://1drv.ms/x/c/54c857a30a5fec46/EVFL9kyTU5dJrOBa6blYlT8BCceWgG3ynTlj4cy8w9J4Zw?e=zPowmo">Commands</a>
  
