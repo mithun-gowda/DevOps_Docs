@@ -253,10 +253,14 @@ The results produce the three-digit value 744.
 | hostname       |              | Check the hostname of the server                                                                  |
 | wget \<url>     |              | Download the binary or files from the internet using `wget http://file.txt.com/download/`         |
 | curl https://www.google.com | | Curl command is used to send/transfer the data to the server                                       |
-| sudo           |              | To get the root privileges                                                                       |
+| sudo           |              | To get the root privileges|
+| cal            |              | calender |
+| htop | | gives nice representation of the process |
 | ps             |              | Ps command is used for displaying the running processes                                           |
 |                | `ps -aux`     | Display all processes which are running                                                           |
 | kill -pid      |              | It is used to kill the process which is running. e.g.: `kill -9` here `9` is the process ID (PID) |
+| pkill -9 process name | | Incase if you don't know process ID|
+|sudo systemctl stop/start service name | | Start / stop the service |
 | ifconfig       |              | - Get information about Ethernet card.                                                            |
 |                |              | - To run this command, install `net-tools`: `sudo apt install net-tools`                           |
 |                | `ifconfig <ethernet name>` | If you want to display 1 ethernet details. e.g.: `ifconfig eth0`                               |
@@ -266,6 +270,9 @@ The results produce the three-digit value 744.
 | route          |              | To display the route table and to set up default gateway in the Linux server                       |
 | alias d="du -sh" |            | It is used to make the command-line interface more user-friendly.|
 | History | | Gives all commands execute before |
+| sudo reboot | | Will reboot the server |
+| sudo shutdown -h now | | will shutdown now |
+| sudo shutdown | | It will take time to shutdown |
 
 <a href="https://1drv.ms/x/c/54c857a30a5fec46/EVFL9kyTU5dJrOBa6blYlT8BCceWgG3ynTlj4cy8w9J4Zw?e=zPowmo">Commands</a>
  
