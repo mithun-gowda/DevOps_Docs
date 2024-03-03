@@ -194,6 +194,8 @@ The results produce the three-digit value 744.
 
 - Package file format: .rpm 
 
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+<h2>Commands</h2>
 
 | Command        | Sub command  | Description                                                                                     |
 |----------------|--------------|-------------------------------------------------------------------------------------------------|
