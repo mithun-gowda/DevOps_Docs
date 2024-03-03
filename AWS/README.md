@@ -124,8 +124,9 @@ resource "aws_instance" "example_server" {
   }
 }
 ```
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
-### Open Instance from Terminal (Mobaxterm)
+## Open Instance from Terminal (Mobaxterm)
 
 ## Initial Setup
 1. Open your terminal (Mobaxterm).
