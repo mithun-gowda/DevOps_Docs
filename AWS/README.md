@@ -219,6 +219,10 @@ resource "aws_instance" "example_server" {
   ```bash
     aws ec2 run-instances --image-id ami-04f5097681773b989 --instance-type t2.micro --key-name test_aws --security-group-ids sg-061f25b84f37db751 --subnet-id subnet-0609e8e25fef5ebd7
   ```
+    **Example**
+  ```bash
+  aws ec2 run-instances --image-id ami-044006b29d --instance-type t2.micro --key-name My_KeyPair --security-group-ids sg-0552bc5d9 --subnet-id subnet-09febc08e0 --tag-specifications 'ResourceType=instance,Tags=[{Key=instance,Value=myInstance}]'
+  ```
 - **Restart instance**
   ```bash
     aws ec2 start-instances --instance-ids i-0387b36ee7befc749 --region ap-southeast-2
