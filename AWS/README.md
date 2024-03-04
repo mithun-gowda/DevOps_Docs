@@ -169,6 +169,7 @@ resource "aws_instance" "example_server" {
 
 2. **Configure the downloaded MSI**:
    - Open the downloaded MSI file and follow the installation prompts.
+   - Or Directly you can do from Terminal, `sudo apt install aws-cli` or `sudo apt install aws-cli --classic`
 
 3. **Check AWS installation**:
    - Open Command Prompt (CMD).
