@@ -235,7 +235,7 @@ resource "aws_instance" "example_server" {
   ```bash
       aws ec2 describe-instances
   ```
-- **erminate instance**
+- **Terminate instance**
   ```bash
     aws ec2 terminate-instances –instance-ids <instance id>
   ```
