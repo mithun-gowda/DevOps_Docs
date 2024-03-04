@@ -179,6 +179,7 @@ resource "aws_instance" "example_server" {
 4. **Configure AWS CLI**:
    - Open CMD.
    - Type `aws configure` and press Enter.
+   - Follow Point 5 to create Access Key
    - Enter Access Key ID.
    - Enter Secret Access Key.
    - Enter Default Region (e.g., `us-east-1`).
