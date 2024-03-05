@@ -190,6 +190,8 @@ resource "aws_instance" "example_server" {
    - Click on "Security Credentials".
    - Create Access Key.
 
+<a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-instances.html"> Official Documentation of AWS EC2 Creation </a>
+  
 ### Working with S3
 
 - **List S3 buckets**:
