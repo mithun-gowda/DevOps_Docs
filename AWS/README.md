@@ -61,7 +61,7 @@ Resources:
       KeyName: <Key Pair Name>
       SubnetId: <Subnet ID>
 ```
-
+<a href="https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws"> Official Docs/Examples for CFT </a>
       
 #### AWS Cloud Development Kit:
 AWS CDK is an infrastructure as code framework that allows you to define your AWS infrastructure using familiar programming languages like TypeScript, Python, and Java. You can use CDK constructs to define VMs and other resources and deploy them using AWS CDK.
