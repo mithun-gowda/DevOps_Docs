@@ -43,7 +43,12 @@
 
 <h2>Kernal:</h2>  
 
-- The kernel is one of the core section of an operating system. It is responsible for each of the major actions of the Linux OS. It can schedule the task, manage the resources, Control the security. 
+- The kernel is one of the core section of an operating system. It is responsible for each of the major actions of the Linux OS. It can schedule the task, manage the resources, Control the security.
+- Kernal has 4 primary responsibilities:
+    - Device Management
+    - Memory Management
+    - Process Management
+    - Handling system related calls 
 
 <h2>Shell:</h2> 
 
