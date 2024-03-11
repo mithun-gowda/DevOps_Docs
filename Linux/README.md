@@ -249,7 +249,7 @@ The results produce the three-digit value 744.
 | tail           |              | This command will display the bottom 10 lines by default                                          |
 |                | `tail -n 20 /etc/passwd` or `tail -20 /etc/passwd` | We can display bottom lines as you want |
 |                | `cat -n /etc/passwd \|head -n 20 \|tail -n 7` | If you want to get the middle lines      |
-| grep \<value> \<filename> |    | Grep command is used to fetch the values by matching pattern                                     |
+| grep \<value> \<filename> |  https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/  | Grep command is used to fetch the values by matching pattern                                     |
 |                | `grep -i <value> <filename>` | This command is used to fetch value if it is uppercase/lowercase character by matching pattern |
 | df             |              | Df command is used to check disk space/free space available                                       |
 |                | `df -h`       | It will display in an understandable format (shows `480M`)                                        |
