@@ -55,6 +55,7 @@ Version: v1
 - **Find all executable files:** `find . -perm/a=x`
 - **Direct execution:** `chmod +x filename.sh`
 - **Change ownership of dir/file:** `chown username filename`
+- **Read mode:** `vim -r text.sh`
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
