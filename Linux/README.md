@@ -282,7 +282,42 @@ The results produce the three-digit value 744.
 | sudo shutdown | | It will take time to shutdown |
 |||Hard Link|
 |||Soft Link|
- 
+
+
+## hard link and softlink in linux
+
+- Hard Links and Soft Links are two types of links used in Linux to create references to files and directories.
+
+
+## Hard Links:
+
+- A hard link is a direct reference to a file, using its inode number.
+- Inodes are unique identifiers for files in Linux/Unix systems.
+- Hard links cannot be created for directories.
+- If the original file is deleted, the hard link will still contain the data of that file.
+- To create a hard link, use the ln command, specifying the source file and the target file:
+
+`ln /path/to/source/file /path/to/target/file`
+
+
+## Soft Links (Symbolic Links):
+
+- A symbolic link (also known as symlink or soft link) is a special type of file that points to the source file or directory in Linux.
+- Soft links contain the path of the original file or directory, not the actual content.
+- Soft links can be used to link libraries, log files, and folders on mounted NFS shares.
+- If the original file is deleted, the soft link will be pointing to a file that does not exist anymore.
+- To create a soft link, use the ln command with the -s option, specifying the source file and the target file:
+
+`ln -s /path/to/source/file /path/to/target/file`
+
+## Differences between Hard Links and Soft Links:
+
+- Hard links use the inode number for file identification, while soft links contain the path of the original file or directory.
+- Hard links act as a copy (mirrored) of the selected file and access the data available in the original file. Deleting the original file does not affect the data in the hard link.
+- Soft links act as a pointer or reference to the file name, and if the original file is deleted, the soft link will point to a non-existent file.
+- Remember to replace /path/to/source/file and /path/to/target/file with the appropriate paths for your specific use case.
+
+  
 ### Disadvantage
 
 - 
