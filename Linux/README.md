@@ -280,5 +280,6 @@ The results produce the three-digit value 744.
 | sudo reboot | | Will reboot the server |
 | sudo shutdown -h now | | will shutdown now |
 | sudo shutdown | | It will take time to shutdown |
-
+|||Hard Link|
+|||Soft Link|
  
