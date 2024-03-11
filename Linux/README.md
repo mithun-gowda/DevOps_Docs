@@ -274,6 +274,8 @@ The results produce the three-digit value 744.
 |                |              | - Install `tree` command to execute: `sudo apt install tree`                                       |
 | route          |              | To display the route table and to set up default gateway in the Linux server                       |
 | alias d="du -sh" |            | It is used to make the command-line interface more user-friendly.|
+| sar | `sudo apt install sysstat` and `sudo systemctl enable sysstat` and `sudo systemctl start sysstat` | The sar command is part of the sysstat package and collects performance statistics for various elements of a Linux computer in real-time and historical reports. |
+| | <a href="https://www.howtogeek.com/793513/how-to-use-the-sar-command-on-linux/"> For more details</a> | CPU Statistics |
 | History | | Gives all commands execute before |
 | sudo reboot | | Will reboot the server |
 | sudo shutdown -h now | | will shutdown now |
