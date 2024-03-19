@@ -51,5 +51,3 @@ result:
 ### If using VirtualBox 
 `vboxmanage list vms`<br>
 `vboxmanage list runningvms`
-
-
