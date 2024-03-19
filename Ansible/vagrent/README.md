@@ -47,3 +47,7 @@ result:
 
 ### Shutdown virtual machine 
 `vagrant halt`
+
+### If using VirtualBox 
+`vboxmanage list vms`<br>
+`vboxmanage list runningvms`
