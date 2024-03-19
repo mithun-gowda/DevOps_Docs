@@ -52,4 +52,4 @@ result:
 `vboxmanage list vms`<br>
 `vboxmanage list runningvms`
 
-<img scr="vagrent/Vagrant Project/Assets/Vagrant1.png" alt="vagrant"> 
+<img scr="DevOps_Docs\Assets\Vagrant1.png" alt="vagrant"> 
