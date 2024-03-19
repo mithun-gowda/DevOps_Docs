@@ -30,7 +30,7 @@
 - If a playbook is run on a system that's already properly configured and in its desired state, then that system should still be properly configured after a playbook runs.
 - Playbooks can also be very complex, with conditionals and variables. However, because most of the real work is done by Ansible modules, playbooks remain brief, readable, and clear even though they can orchestrate entire networks of managed nodes.
 
-<a href="https://spacelift.io/blog/ansible-best-practices">More Details</a>
+<a href="https://spacelift.io/blog/ansible-best-practices">More Details</a><br>
 <a href="https://spacelift.io/blog/infrastructure-as-code-tools">Popular Iaac </a>
 
 
