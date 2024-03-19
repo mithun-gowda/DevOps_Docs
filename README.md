@@ -87,9 +87,11 @@ This inefficiency is addressed by virtual machines.</li>
 <li>The partition done server are logical isolation which is VM's. example: [v1,v2,......vn] In one physical server</li>
 <li>In this added efficiency using DevOps. By adding automated process by hypervisor</li>
 <li>Popular Hypervisors are:</li>
+  
   - Hyper-V
   - VMware
   - Xen
+    
 
 <h3>Here are some differences between physical and virtual machines:</h3>
 <li><b>Performance:</b> Physical servers offer higher performance and computing power.</li>
