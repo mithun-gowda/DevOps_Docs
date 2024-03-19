@@ -51,3 +51,7 @@ result:
 ### If using VirtualBox 
 `vboxmanage list vms`<br>
 `vboxmanage list runningvms`
+
+### More Commands:
+<img src="../Assets/Vagrant1.png"> <br>
+<img src="../Assets/Vagrant2.png">
