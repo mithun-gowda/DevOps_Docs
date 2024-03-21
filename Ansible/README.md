@@ -59,7 +59,7 @@
 <h1 align="center">YAML</h1>
 
 <img src="./Assets/Playbook_example1.png"><br>
-<img src="./Assets/Playbook_example.png"><br>
+<img src="./Assets/playbook_example.png"><br>
 
 ###
 
