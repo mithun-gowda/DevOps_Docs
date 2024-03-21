@@ -41,6 +41,8 @@
 
 ###
 
+<img src="./Assets/playbook.png">
+
 - While modules provide the means of accomplishing a task, the way you use them is through an Ansible playbook.
 - A playbook is a configuration file written in YAML that provides instructions for what needs to be done in order to bring a managed node into the desired state.
 - Playbooks are meant to be simple, human-readable, and self-documenting.
