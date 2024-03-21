@@ -1,3 +1,5 @@
+- **Vagrant** allows for easy provisioning of VM's using configuration files called `"Vagrantfiles"` which specify the desired state of the VM 
+
 ### Vagrant Install
 
 <a href="https://developer.hashicorp.com/vagrant/install" > Install vagrant </a>
@@ -33,6 +35,12 @@
 `vagrant up`
 - This will create a new virtual machine using the box you selected and start it. The first time, Vagrant will download the box from the internet.
 
+`Vagrant reload`
+- This is restart the machine
+
+`vagrant provision`
+- Whenever you make any changes in the provision script can run command `vagrant  provision`. This will only update the new changes (Ensure the VM is up when running this command)
+
 ### Check Vagrant list in CMD
 `vagrant box list` enter <br>
 result: `ubuntu/trusty64 (virtualbox, 20190514.0.0)`
@@ -52,6 +60,9 @@ result:
 `vboxmanage list vms`<br>
 `vboxmanage list runningvms`
 
+<a href="https://vagrantfile-generator.vercel.app/">Vagrant file generator</a>
+
 ### More Commands:
 <img src="../Assets/Vagrant1.png"> <br>
-<img src="../Assets/Vagrant2.png">
+<img src="../Assets/Vagrant2.png"> <br>
+<img src="../Assets/Vagrant3.png">
