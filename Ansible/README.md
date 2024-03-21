@@ -58,6 +58,9 @@
 
 <h1 align="center">YAML</h1>
 
+<img src="./Assets/Playbook_example1.png"><br>
+<img src="./Assets/Playbook_example.png"><br>
+
 ###
 
 - YAML is a human-readable data serialization language that is often used for writing configuration files.
