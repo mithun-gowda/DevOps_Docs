@@ -247,3 +247,38 @@ resource "aws_instance" "example_server" {
     - Navigate to IAM in the AWS Management Console.
     - Click on "Users".
     - Create a new user and assign necessary permissions (e.g., AmazonEC2FullAccess).
+   
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
+# AWS Services Overview
+
+- **EC2 (Elastic Compute Cloud)**: Virtual server that you can use to run your applications.
+- **VPC (Virtual Private Cloud)**: Secure space where you can host your resources like servers and databases.
+- **EBS (Elastic Block Store)**: Storage for your EC2 instances, like a virtual hard drive.
+- **S3 (Simple Storage Service)**: Cloud storage for files and data.
+- **IAM (Identity and Access Management)**: Controls who can access your AWS resources and what they can do.
+- **CloudWatch**: Monitors your AWS resources and applications, tracks metrics, and stores log files.
+- **Lambda**: Runs code without provisioning or managing servers, ideal for short tasks or functions.
+- **AWS Code Services**: Tools for building and deploying applications automatically (CI/CD pipelines).
+- **AWS Config**: Tracks changes to your AWS resources and helps with compliance.
+- **Billing and Cost Management**: Monitors and manages your AWS spending.
+- **AWS KMS (Key Management Service)**: Manages encryption keys for securing data.
+- **CloudTrail**: Records API calls and provides audit logs for activity tracking.
+- **AWS EKS (Elastic Kubernetes Service)**: Manages and orchestrates containerized applications using Kubernetes.
+- **Fargate**: Runs containers without managing the underlying infrastructure.
+- **ECS (Elastic Container Service)**: Runs and manages Docker containers on AWS.
+  
+# Additional AWS Services
+
+- **RDS (Relational Database Service)**: Managed database service for SQL databases like MySQL, PostgreSQL, etc.
+- **Route 53**: AWS's DNS (Domain Name System) web service for routing domain traffic to AWS resources.
+- **Elastic Beanstalk**: Platform as a Service (PaaS) for deploying and managing applications without dealing with the underlying infrastructure.
+- **CloudFormation**: Infrastructure as Code (IaC) service for provisioning and managing AWS resources using templates.
+- **Elastic Load Balancing (ELB)**: Automatically distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones.
+- **Auto Scaling**: Automatically adjusts the number of EC2 instances based on demand to maintain performance and save costs.
+- **SNS (Simple Notification Service)**: Pub/Sub messaging service for sending notifications and alerts.
+- **SQS (Simple Queue Service)**: Managed message queuing service for decoupling and scaling microservices.
+- **AWS Glue**: ETL (Extract, Transform, Load) service for preparing and transforming data for analytics.
+- **AWS Athena**: Query service that allows you to analyze data in S3 using standard SQL queries.
+- **AWS Secrets Manager**: Securely store and manage access to API keys, passwords, and other secrets.
+- **AWS Certificate Manager**: Manage SSL/TLS certificates for your applications deployed on AWS.
