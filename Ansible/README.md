@@ -65,6 +65,16 @@
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
+<h1 align="center"> Ansible Adhoc and Playbook </h1>
+- find the modules in below website (-m)
+- <a href="https://docs.ansible.com/ansible/2.9/modules/shell_module.html#shell-module">Ansible Modules</a>
+- Where ansible adhoc commands are used for simple task like from the main server delete / add / copy files in target server
+- Example:
+- `ansible -i inventory all -m "shell" -a "touch devopsclass"`<br>
+- `ansible -i inventory all -m "shell" -a "nporc"`<br>
+- `ansible -i inventory all -m "copy" -a "path:"" dest:"" group="" owner="""`<br>
+- Playbook are used to execute complex task where in playbook there will be bunch of commands to perform task.
+  
 <h1 align="center">YAML</h1>
 
 <img src="./Assets/Playbook_example1.png"><br>
