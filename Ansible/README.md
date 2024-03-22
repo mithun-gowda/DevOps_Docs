@@ -6,6 +6,7 @@
 ###
 
 - Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems.
+- `sudo apt install ansible`
 - Asible is an open source automation tool
 - You can use Ansible to manage one or many computers at once
 - Can do tasks like configuration management, application deployment, infrastructure setup etc.
