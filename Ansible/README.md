@@ -65,7 +65,7 @@
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
-<h1 align="center"> Ansible Adhoc and Playbook </h1>
+<h1 align="center"> Ansible Ad-hoc and Playbook </h1>
 
 - find the modules in below website (-m)
   
@@ -79,7 +79,116 @@
 - `ansible -i inventory all -m "shell" -a "nporc"`<br>
 - `ansible -i inventory all -m "copy" -a "path:"" dest:"" group="" owner="""`<br>
 - Playbook are used to execute complex task where in playbook there will be bunch of commands to perform task.
-  
+
+<img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
+
+<h2 align="center">Ansible-galaxy roles:</h2>
+
+<h3>Directory Structure:</h3>
+
+- **defaults**: This directory contains default variables for the role. <br>
+  For example, defaults/main.yml might contain default values for variables used in the role. Here's a simplified example:
+```yaml
+# defaults/main.yml
+kube_version: "v1.23.0"
+kube_cluster_name: "my-cluster"
+```
+
+- **files:** This directory can include any static files needed by the role. <br>
+  For example, `files/config.yaml` might contain a configuration file for Kubernetes.
+1. Create the files directory within your role if it's not already present:
+
+```
+roles/
+└── kubernetes/
+    └── files/
+```
+  2. Inside the files directory, create a configuration file for Kubernetes, such as `config.yaml`:
+
+```
+roles/
+└── kubernetes/
+    └── files/
+        └── config.yaml
+```
+  3. Populate config.yaml with your desired Kubernetes configuration. <br>
+  For example:
+
+```yaml
+# files/config.yaml
+apiVersion: v1
+kind: Config
+clusters:
+  - name: my-cluster
+    cluster:
+      server: https://kubernetes-api.example.com
+      certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFRENDQW1DZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFHRXdKVlV6RU8KTVNnd0pnWURWUVFERXdwdmJtVnVkSEpwYm1SbGJHUmpiMjVsZUdsMFpTQjFhV05vYjNKZmFXUTlJaUE5SUVGNlJHeGxibVY0CmJXbHVkSEpwYm1SbGJHUmpiMjVsZUdsMFpTQjFhV05vYjNKZmFXUTlJaUE5SUVGNlJHeGxibVY0YldsdWRISnBibUZ0WlRFV01CUUgKQmdrcWhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBbzdaK2M4ZDVoOEFnT1BWZ0lNR2c4eVVBcDFDME9oUytjNXVyCkpaRmhBTVFsaGdpeWRncjZFaDZkNktadTBua21LNFFSaEpyVzJYa29UWVRMN0pnUHl5b3RuWnNPNVpYYUdyaWQ2Zm8KUHJ0Z3VzZ2x0UDIwblN1eER4UGxPajQvRm1lMG10UEo4d1ovUEpWRnBZU2NwNnQ3aWV2RzlCd3pHa2x4Z3pmMgpmL3F2TmZIUnJPMUJjTlVyUjFiN0JHdmZxY0JqUHJhV3UxMjBoOW9kMnZrRnJ0akpBQmpkL1p4ekttVHRtUkpCCkFSUGdMSXJ3QWlFQXdSQUlnQ0FRbUVBQUlDQVFrUmxOY0tMN2Fwb2pBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWQKZEdobElHTnZiUzlqWVhSbFpDSTZJakV3TWpZd05qQTRNRE14TVRBNE1EVXpORGt4TXpBeU1EeGhNVE14TVRValp6RXcKVEhCek1EUXlNakV3TmpBMU9URXdPVEUwWkRBNU9ERXlNVEV3TlRBeU1ERTBNVEV3TlRBeU1ERTBNVEV3TlRBeU1ERTBNVEV3Ck1UVXdNVEl6TkRBd09ERXhPVEV5TVRFd05UQXlNVEUxTURFd05UVXdOVEF5TURFMU1URXdOVEF5TURFMU1URXdOVEF5TWpFMU1qRXcKVEhCek1EUXlNREl6TmpFek1URXhNVEV6TVRReU1qTTBNVEV3TURFeE5EUXlNVEl6TmpJek5qRXpNVEV4TWpNMU1URXdNVEV4TURReQpNVEl6Tmprd01URXdNVEV4TWpjMU1qTXdOVEF5TURFd05EUXlNVEl6TmpFd09URXhNVEl6TVRReU1ERTBNVEV3TlRBeE1UUXkKTVRJek16ZzRNRE14TmpVMU1UVXdNRE14TlRJek1EQXdPVEV6TURBeE5UUXlNVEUxTURVeE5EUXlNVEUxTURVeE1URXhNVEl6Ck9ERXlNVEV3TURFeE5EQXdPVEV6TVRBeU1ERTBNVEV3TURFeE5EQXdPVEV6TVRBeU1ERTBNVEV3TURFeE5EQXdPVEV6TVRBNApNRE14TmpZMU1qRTFOekUzTXprME1EY3lOVEF4TWpjM01UWTFOekV3TlRJek1EQXdPVEV6TURBeE5UUXlNVEUxTURVeE5EUXlNVEUxCk1URXhNVEl6TmpFek1UVXhNVEV6TVRReU1qSXpNVEV4TWpjMU1qQXhOVEl6TURBd09UQTBNVFV3TURVeE9EQXlNVEl6TmpNek9UUXgKTURBd05qVTFNVEF3TURFeE5EUXlNVEV3TlRBeU1ERTBNVEV3TURFeE5EUXlNVEV3TlRBeU1ERTBNVEV3TURFeE5EUXlNVEV3TlRBeQpNREU0TXpReU1Ua3pNVEU0TXpNeU1qQXhOVEUxTXpJd01qY3dOVEF5TURFMU1URXdOVEF5TWpFMU
+```
+
+- **handlers:** Contains handler tasks that can be triggered by other tasks. <br>
+   **For example,** `handlers/main.yml` might define a handler to restart a service after configuration changes.
+```yaml
+# handlers/main.yml
+- name: restart kubernetes
+  service:
+    name: kubelet
+    state: restarted
+```
+
+- **meta:** This directory includes metadata for the role, such as dependencies. The `meta/main.yml` file might look like this:
+```yaml
+# meta/main.yml
+dependencies:
+  - role: some_other_role
+    vars:
+      some_var: value
+```
+- **tasks** Contains the main tasks that the role will perform. <br>
+  **For example,** `tasks/main.yml` might define tasks to install and configure Kubernetes components.
+```yaml
+# tasks/main.yml
+- name: Install Kubernetes
+  package:
+    name: kubelet
+    state: present
+  vars:
+    kube_version: "{{ kube_version }}"
+```
+
+- **templates:** Stores template files that can be used by tasks.
+  **For example,** `templates/config-template.yaml.j2` might be a Jinja2 template for generating Kubernetes configuration files.
+
+- **tests:** Can include test cases for the role, typically using tools like Molecule or Ansible's built-in testing features.
+
+- **vars:** Can include variables specific to the role. This directory is often used to organize variables used across different tasks.
+```yaml
+# vars/main.yml
+kube_api_port: 6443
+```
+
+- **Role Metadata (meta/main.yml):**
+The meta/main.yml file contains metadata about the role. Here's an example:
+```yaml
+# meta/main.yml
+galaxy_info:
+  author: Your Name
+  description: Ansible role for managing Kubernetes clusters
+  company: Your Company
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+    - name: CentOS
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - kubernetes
+```
+
+
+
 <h1 align="center">YAML</h1>
 
 <img src="./Assets/Playbook_example1.png"><br>
