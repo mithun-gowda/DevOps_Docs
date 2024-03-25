@@ -82,8 +82,9 @@
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif" /> 
 
-<h2 align="center">Ansible-galaxy roles:</h2>
+<h1 align="center">Ansible-galaxy roles:</h1>
 
+`ansible-galaxy roles init <folder-name>` here folder name is `Kubernetes`
 <h3>Directory Structure:</h3>
 
 - **defaults**: This directory contains default variables for the role. <br>
