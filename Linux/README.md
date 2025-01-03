@@ -1,6 +1,3 @@
- 
-
-
  <h1>LINUX</h1>
 
 - Linux is a billion-dollar corporation nowadays. Thousands of governments and companies are using Linux operating systems across the world because of lower money, time, licensing fee, and affordability. Linux can be used within several types of electronic devices. These electronic devices are easily available for users worldwide. 
@@ -317,7 +314,4 @@ The results produce the three-digit value 744.
 - Soft links act as a pointer or reference to the file name, and if the original file is deleted, the soft link will point to a non-existent file.
 - Remember to replace /path/to/source/file and /path/to/target/file with the appropriate paths for your specific use case.
 
-  
-### Disadvantage
-
-- 
+ 
